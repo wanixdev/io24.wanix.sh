@@ -18,6 +18,7 @@
   if (!auth.isAuthenticated()) {
     auth.login();
   } else {
+    localStorage.setItem("jazz:enabled", "true");
     bootWanix();
   }
 </script>
